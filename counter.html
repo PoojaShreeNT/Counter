@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>COUNTER</title>
+        <link rel="stylesheet" href="counter.css">
+    </head>
+    <body>
+        <h1 id="co">COUNTER</h1>
+        <div id="first"></div>
+        <div id="second">
+            <h1 id="res">0</h1>
+            <button id="two" onclick="decrement()">-</button>
+            <button id="three" onclick="clearcontent()">c</button>
+            <button id="one" onclick="increment()">+</button>
+        </div>
+        <script>
+            var num=0;
+            function decrement(){
+                num-=1;
+                document.getElementById("res").innerHTML=num;
+            }
+            function increment(){
+                num+=1;
+                document.getElementById("res").innerHTML=num;
+            }
+            function clearcontent(){
+                document.getElementById("res").innerHTML=0;
+            }
+
+
+        </script>
+    </body>
+</html>
